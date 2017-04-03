@@ -11,7 +11,9 @@ c) `holiday(Week_Number,Day)` represents a holiday on the day: Day in the week n
 d) `should_precede(Course_Code,Event1,Event2)` is available to make sure that the event named `Event1` should be scheduled before `Event2` for the course `Course_Code` e.g. `should_precede(csen403,quiz1,quiz2)`.
 
 e) Every group has predefined slots in which academic events could be held. Such slots are encoded through the predicate `quizslot(Group_Name, Day, Slot_Number)`. For example `quizslot(group4MET, tuesday, 1)` encodes the fact that `group4MET` could have events on Tuesdays during the first slot. Each group could have more than one possible timing for events.
-#Properties of a Schedule :
+
+# Properties of a Schedule :
+
 **Assuming that there is an infinite number of locations, a produced schedule should have the following features:**
 1. No events should be scheduled on a holiday.
 2. A group cannot have two events at the same time.
@@ -21,7 +23,8 @@ e) Every group has predefined slots in which academic events could be held. Such
 6. Two quizzes of one course should be separated by at least one weak.
 7. The schedule generated should take into account that some courses have some events that should precede others.
 
-#Predicates to be added
+# Predicates to be added
+
 The rest of the description will guide you through the predicates that you need to implement to be able to solve the scheduling problem.
 
 **precede/2**
@@ -50,7 +53,7 @@ Similar to no_same_day_quiz/2 you should add `no_same_day_assignment(G,Schedule)
 **no_holidays/2**
 `no_holidays(G,Schedule)` should succeed only if Schedule has no events scheduled in any of the available holidays.
 
-#Scheduling
+# Scheduling
 The main predicate the should activate the scheduling is `schedule(Week_Number, Schedule)` which should success if `Schedule` is the schedule of all of the available events satisfying all the constraints.
 `Week_Number` is the number of available weeks for the semester.
 Note that you can use the accumulator technique or not. That is why in the previous section you were given alternative approaches for the predicates to be added.
