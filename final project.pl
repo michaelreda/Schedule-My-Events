@@ -1,3 +1,8 @@
+%copyright for Michael Reda http://github.com/michaelreda
+
+%to run : schedule(number_of_weeks, Schedule)
+%for example : schedule(2,Schedule) means genarate a schedule for 2 weeks
+
 
 % +++++++****+++++++ PLEASE TAKE CARE THAT IT MAY TAKE TIME TO GENERATE VERY COMPLICATED SCHEDULES ++++++++****+++++++
 % +++++++****+++++++                **            SO PLEASE WAIT :)          **                    ++++++++****+++++++
