@@ -1,3 +1,11 @@
+# For Execution:
+<br>
+1-<a href="http://swish.swi-prolog.org/p/schedule_my_events.pl" target="_blank">http://swish.swi-prolog.org/p/schedule_my_events.pl</a>
+<br>
+2-to run : schedule(number_of_weeks, Schedule)
+<br><i>for example : schedule(2,Schedule) means genarate a schedule for 2 weeks</i>
+
+# Project Description
 # Schedule-My-Events
 Every faculty at the Uni offers its students with different courses. Each course has a group of events associated to it. Such events include quizzes, assignments, project evaluations, ... etc. In this project we are required to implement a schedule for academic events for different study groups in the Uni.
 
